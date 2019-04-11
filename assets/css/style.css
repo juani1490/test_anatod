@@ -1,0 +1,124 @@
+body {
+	background: #d9e0e7;
+}
+
+/*section start nav*/
+	.nav{
+		background: #2d353c;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+
+	.nav #navList{
+		padding: 0 20px;
+	}
+
+	.nav #navList li{
+		color: #a8acb1;
+	  list-style: none;
+	  margin: 10px;
+	  padding: 10px;
+	}
+
+	.nav #navList li:hover{
+		cursor: pointer;
+		color: white;
+	}
+/*section end nav*/
+
+/*section start content*/
+	#content{
+	 width: 50%;
+	 margin: 0 auto;
+	 background: white;
+	}
+
+	#title{
+	  background: #242a30;
+	  border: 1px solid;
+	  text-align: center;
+	}
+
+	#title h4{
+	  color: white;
+	  display: inline-block;
+	  vertical-align: middle;
+	  line-height: 0;
+	}
+
+	.form-client{
+	  padding: 20px;
+	  text-align: center;
+	}
+
+	.form-client fieldset{
+		border: 0;
+	}
+
+	.form-input input, select{
+		margin: 5px;
+		border: 1px solid #393939;
+		border-radius: 5px 5px 5px 5px;
+		color: #393939;
+		font-size: 12px;
+		padding: 5px;
+	}
+
+	.form-row{
+		margin: 10px 0;
+	}
+
+	.footer{
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	.table-clients{
+		width: 100%;
+	}
+
+	.table-clients, th, td{
+		border-bottom: 1px solid lightgrey;
+		border-collapse: collapse;
+	}
+
+	th, td{
+		padding: 10px;
+	}
+
+	th{
+		text-align: left;
+	}
+
+	.tbody-client tr:hover{
+		cursor: pointer;
+		background-color: rgba(0,0,0,.05);
+	}
+
+	.messageSuccess {
+		display: none;
+		color: green;
+	}
+
+	.messageError{
+		display: none;
+		color: red;
+	}
+
+	.form-button{
+	    color: #fff;
+	    background: #348fe2;
+	    border-color: #348fe2;
+	    border: 1px solid transparent;
+	    line-height: 16px;
+    	padding: 5px 10px;
+	}
+
+	.form-button:hover{
+		cursor: pointer;
+	    background: #2a72b5;
+	    border-color: #2a72b5;
+	}
+/*section end content*/

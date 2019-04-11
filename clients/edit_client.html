@@ -1,0 +1,48 @@
+<div id="form-client">
+  <div id="title">
+    <h4>Editar Cliente</h4>
+  </div>
+  <form class="form-client" id="edit-client" method="POST" onSubmit="EditClient(); return false">
+    <fieldset>
+      <div class="form-row">
+        <div class="form-label">
+          <label>Id:</label>
+        </div>
+        <div class="form-input">
+          <input type="text" name="Id" id="id" readonly>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">
+          <label>Nombre:</label>
+        </div>
+        <div class="form-input">
+          <input type="text" name="Name" id="name" placeholder="Nombre" onkeypress="return CheckInput(event)" required="">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">
+          <label>DNI:</label>
+        </div>
+        <div class="form-input">
+          <input type="number" name="DNI" id="dni" placeholder="DNI" onkeypress="return CheckInput(event, 'number')" required="">     
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-label">
+          <label>Localidad:</label>
+        </div>
+        <div class="form-input">
+          <select id="location" name="Location" required=""></select>
+        </div>
+      </div>
+      <div class="footer">
+        <hr>
+        <button type="submit" class="form-button" id="button-editClient">Editar</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
+<script>
+  $('#name').focus();
+</script>

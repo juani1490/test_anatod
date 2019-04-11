@@ -1,0 +1,46 @@
+<div id="form-client">
+	<div id="title">
+		<h4>Agregar nuevo Cliente</h4>
+	</div>
+	<form class="form-client"  id="add-client" method="POST" onSubmit="AddClient(); return false">
+		<fieldset>
+			<div class="form-row">
+				<div class="form-label">
+					<label>Nombre:</label>
+				</div>
+				<div class="form-input">
+					<input type="text" name="Name" id="name" placeholder="Nombre" onkeypress="return CheckInput(event, 'text')" required="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-label">
+					<label>DNI:</label>
+				</div>
+				<div class="form-input">
+					<input type="number" name="DNI" id="dni" placeholder="DNI" onkeypress="return CheckInput(event, 'number')" required="">			
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-label">
+					<label>Localidad:</label>
+				</div>
+				<div class="form-input">
+					<select id="location" name="Location" required=""></select>
+				</div>
+			</div>
+			<div class="footer">
+				<hr>
+				<button type="submit" class="form-button" id="button-addClient">Agregar</button>
+				<div class="messageSuccess" id="messageSuccess">
+					<p>Cliente cargado con exito.</p>
+				</div>
+				<div class="messageError" id="messageError">
+					<p>Error al cargar el cliente.</p>
+				</div>
+			</div>
+		</fieldset>
+	</form>
+</div>
+<script>
+	$('#name').focus();
+</script>
