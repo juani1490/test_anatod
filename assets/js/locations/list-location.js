@@ -2,7 +2,7 @@ function GetLocations(){
 	$('#location').empty();
 	
 	$.ajax({
-	        url: "db/DataAccess/locations/list-location.php",
+	        url: "db/DataAccess/Locations/list-location.php",
 	        type: "GET",
 	        dataType: 'json',
 	        success: function(response) {

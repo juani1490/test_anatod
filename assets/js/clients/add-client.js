@@ -20,7 +20,7 @@ function AddClient(){
 	var data = $('#add-client').serialize();
 
 	$.ajax({
-	        url: "db/DataAccess/clients/add-client.php",
+	        url: "db/DataAccess/Clients/add-client.php",
 	        type: "POST",
 	        dataType: 'json',
 	        data: data,

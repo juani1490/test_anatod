@@ -1,5 +1,5 @@
 <?php 
-    require dirname( dirname(__FILE__) ) . '/Entities/class.database.php';
+    require dirname( dirname(__FILE__) ) . '/class.database.php';
 
    $db = new class_db();
    $locations = $db->GetAllLocations();

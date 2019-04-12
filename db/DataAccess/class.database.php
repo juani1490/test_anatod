@@ -1,6 +1,6 @@
 <?php
-require "class.client.php";
-require "class.location.php";
+require "Entities/class.client.php";
+require "Entities/class.location.php";
 
 /*
  * anatod ® - ©
@@ -33,29 +33,21 @@ class class_db {
      * @param array $client
     */
     public function Add($client){
-      $name = ucwords(strtolower($client->GetName()));
-      $dni = $client->GetDNI();
-      $locationId = $client->GetLocationId();
-
-      $this->conn->query("INSERT INTO clientes (nombre, dni, localidad) VALUES('$name', '$dni', '$locationId')");
+      $this->conn->query("INSERT INTO clientes (nombre, dni, localidad) VALUES('" . ucwords(strtolower($client->GetName())) . "', '" . $client->GetDNI() ."', '" . $client->GetLocationId() . "')");
     }
 
     /**
-     * Edit a client
+     * Edits a client
      *
      * @param int $id
      * @param array $client
     */
     public function Edit($id, $client){
-      $name = ucwords(strtolower($client->GetName()));
-      $dni = $client->GetDNI();
-      $locationId = $client->GetLocationId();
-
-      $this->conn->query("UPDATE clientes SET nombre = '$name', dni = '$dni', localidad = '$locationId' WHERE id = $id");
+      $this->conn->query("UPDATE clientes SET nombre = '" . $client->GetName() ."', dni = '" . $client->GetDNI() ."', localidad = '" . $client->GetLocationId() . "' WHERE id = $id");
     }
 
     /**
-     * Gets a client by id
+     * Gets a client by its id
      *
      * @param int $id
      *

@@ -1,7 +1,7 @@
 function GetClients(){
 	
 	$.ajax({
-	        url: "db/DataAccess/clients/list-client.php",
+	        url: "db/DataAccess/Clients/list-client.php",
 	        type: "GET",
 	        dataType: 'json',
 	        success: function(response) {
@@ -28,7 +28,7 @@ function ShowClient(id){
 	GetLocations();
 
 	$.ajax({
-	        url: "db/DataAccess/clients/search-client.php",
+	        url: "db/DataAccess/Clients/search-client.php",
 	        type: "POST",
 	        data: {'Id': id},
 	        dataType: 'json',

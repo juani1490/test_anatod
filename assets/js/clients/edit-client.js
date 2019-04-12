@@ -2,7 +2,7 @@ function EditClient(id){
 	var data = $('#edit-client').serialize();
 
 	$.ajax({
-	        url: "db/DataAccess/clients/edit-client.php?id=" + id,
+	        url: "db/DataAccess/Clients/edit-client.php?id=" + id,
 	        type: "POST",
 	        dataType: 'json',
 	        data: data,
