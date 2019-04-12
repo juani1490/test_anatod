@@ -25,7 +25,7 @@ class Client {
 	 * DNI
 	 *
 	 * @access private
-	 * @var string
+	 * @var int
 	*/
 	private $dni;
 

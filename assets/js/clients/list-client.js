@@ -36,11 +36,13 @@ function ShowClient(id){
 	        	setTimeout(function(){ 
 		        	var client = response.Data;
 
-		        	$('#id').val(client[0].id);
 		        	$('#name').val(client[0].nombre);
 		        	$('#dni').val(client[0].dni);
 		        	$('#location').val(client[0].localidad);
 	        	}, 180);
+	        	
+        		$('#edit-client').removeAttr('onSubmit');
+						$('#edit-client').attr('onSubmit', 'EditClient(' + id + '); return false');
 					}
 	});
 }

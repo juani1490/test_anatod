@@ -4,7 +4,7 @@
 
   $db = new class_db();
   $client = new Client($_POST['Name'], $_POST['DNI'], $_POST['Location']);
-  $result = $db->Edit($_POST['Id'], $client);
+  $result = $db->Edit($_GET['id'], $client);
 
   echo json_encode($client);
  ?>
